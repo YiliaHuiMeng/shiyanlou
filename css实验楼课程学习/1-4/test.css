@@ -1,0 +1,60 @@
+a:link{
+    color: #FF0000;  /* 未被访问的链接 */
+    background-color: #426998;
+    text-decoration: none;  /*去掉下划线*/
+}
+a:visited{
+    color: #00FF00;  /* 已被访问的链接 */
+    background-color: #4ca38f;
+}
+a:hover{
+    color: #FF00FF;  /* 鼠标指针移动到链接上 */
+    background-color: #569b49;
+}
+a:active{
+    color: #0000FF;  /* 正在被点击的链接 */
+    background-color: #969046;
+}
+ul.circle{
+    list-style-type: circle;
+}
+ul.square{
+    list-style-type:square;
+}
+ul.upper-roman{
+    list-style-type:upper-roman;
+}
+ul.lower-alpha{
+    list-style-type:lower-alpha;
+}
+ul.image1{list-style-image: url("")}
+ul.image2{list-style-image: url("")}
+#tb td,th{
+    border:1px solid green;
+}
+#tb{
+    border-collapse: collapse;
+    width:500px;
+    text-align: center;
+}
+#tb th{
+    text-align: center;
+    color: black;
+    background-color: lightgreen;
+}
+
+#tb tr.tr2 td{
+    color: black;
+    background-color: #B2FF99;
+}
+
+#p1{
+    outline-color: aquamarine;
+    outline-style: groove;
+    outline-width: 10px;
+}
+#p2{
+    outline-style: dotted;
+    outline-color: green;
+    outline-width: 5px;
+}

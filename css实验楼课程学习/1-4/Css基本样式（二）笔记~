@@ -1,0 +1,24 @@
+Css基本样式之背景：
+	background-attachment:背景图像是否固定或者随着页面的其余部分滚动。
+	background-color:设置元素的背景颜色
+	background-image:把图片设置为背景
+	background-position:设置背景图片的起始位置.其中包含top、bottom、left、right、center.
+	background-repeat:设置北京图片是否及如何重复.其中no-repeat:不能重复，repeat:可重复，repeat-x:表示x轴重复，repeat-y:表示y轴重复。
+	background-size:规定背景图片的尺寸
+	background-origin:规定背景图片的定位区域
+	background-clip:规定背景的绘制区域
+	
+	以上后3个为Css3的样式。
+
+Css基本样式之文本：
+	color:文本颜色
+	direction:文本方向
+	line-height:行高
+	letter-spacig:字符间距
+	text-alig:对其元素这哦个的文本
+	text-decoration:向文本添加修饰
+	text-indent:缩进元素中文本的首行
+	text-tranform:元素中的字母
+	unicode-bidi:设置文本方向
+	white-space:元素中的空白的处理方式
+	word-spacing:字间距
