@@ -1,0 +1,36 @@
+h1{
+    padding-left: 5cm;
+    padding-right: 5cm;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h2{
+    border-style: dashed;
+    border-top-width: 15px;
+    border-right-width: 5px;
+    border-bottom-width: 15px;
+    border-left-width: 5px;
+    border-color: blue rgb(25%,35%,45%) #909090 red;
+}
+p{
+    margin: 0.5em 1em 0.5em 1em;
+}
+/* h1{margin:0.25em 1em 0.5em; } 等价于 0.25em 1em 0.5em 1em*/
+/* h1{margin:1em 0.5em; } 等价于  1em 0.5em 1em 0.5em  */
+/* h1{margin:0.25em } 等价于 0.25em 0.25em 0.25em 0.25em */
+
+.wb{
+    margin: 100px;
+}
+
+.bk{
+    border-style: groove;
+}
+
+.nj{
+    padding: 10px;
+}
+
+.zw{
+    background-color: cornflowerblue;
+}
