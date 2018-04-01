@@ -1,61 +1,13 @@
-.position1{
-    width:100px;
-    height: 100px;
-    background-color: cornflowerblue;
-}
-.position2{
-    width:100px;
-    height: 100px;
-    background-color: cornflowerblue;
-    position: relative;
-    left: 60px;
-}
-.position3{
-    width:100px;
-    height: 100px;
-    background-color: cornflowerblue;
-    position: absolute;
-    left: 60px;
-}
-.position4{
-    width:100px;
-    height: 100px;
-    background-color: cornflowerblue;
-    position: absolute;
-    left: 60px;
-    z-index: 1;
-}
-.position5{
-    width:100px;
-    height: 100px;
-    background-color: aqua;
-    z-index: 2;
-    left: 10px;
-    top: 10px;
-    position: relative;
-}
-.p1{
-    line-height: normal;
-    width:400px;
-}
-.p2{
-    line-height: 50%;
-    width:400px;
-}
-.p1{
-    line-height: 200%;
-    width:400px;
-}
+h1,h2,h3,h4{color: cadetblue;} /* *{color: cadetblue;} */
 
-ul{
-    list-style: none;
-}
+.div{color: cadetblue;}
 
-a:link,a:visited{
-    text-decoration: none;
-    background-color: lightblue;
-    display: block;
-}
-a:active,a:hover{
-    background-color: cadetblue;
-}
+p strong{color: cadetblue;}
+
+h1>strong{color: red;}
+
+li+li{
+    color: cadetblue;
+    font-size: 40px;
+} 
+/*当只有一个li的时候，所有的li标签都会变成同样的样式，如果是两个，则后两个变化，当有三个时，全部不变。*/
