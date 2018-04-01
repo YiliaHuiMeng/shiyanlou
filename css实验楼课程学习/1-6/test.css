@@ -1,0 +1,61 @@
+.position1{
+    width:100px;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+.position2{
+    width:100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: relative;
+    left: 60px;
+}
+.position3{
+    width:100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 60px;
+}
+.position4{
+    width:100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 60px;
+    z-index: 1;
+}
+.position5{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+    position: relative;
+}
+.p1{
+    line-height: normal;
+    width:400px;
+}
+.p2{
+    line-height: 50%;
+    width:400px;
+}
+.p1{
+    line-height: 200%;
+    width:400px;
+}
+
+ul{
+    list-style: none;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    background-color: lightblue;
+    display: block;
+}
+a:active,a:hover{
+    background-color: cadetblue;
+}

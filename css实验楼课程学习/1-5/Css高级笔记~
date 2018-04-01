@@ -1,0 +1,15 @@
+Css盒子模型：
+	盒子组成部分：margin(外边距:边框以外的部分)、border(边框：内边距的边缘)、padding(内边距：直接包围内容的部分)、content(正文框的最内部分)
+
+	内边距、边框和外边据都是可选的，默认值为0，其中许多元素可以通过选择器或者用户单独设置。
+	
+	a.内边距padding：处于正文外、边框内。padding属性定义元素边框于元素内容之间的空白区域。可食用长度值或者百分比值，但不允许用负值。	
+	它包括:1.padding-top，2.padding-right,3.padding-bottom,4.padding-left
+	常见单位像素(px)，厘米（cm）
+	
+	b.边框border：围绕元素内容和内边距的一条或多条线。可以通过border属性可以设置宽度(border-width)、样式（border-style）、颜色(border-color).
+	特别的，对宽度有如下单独设置：1.border-top-width,2.border-left-width,3.border-bottom-width,4.border-right-width
+
+	c.外边距margin：默认0，有top、left、right、bottom
+	合并机制：当前后两个模块没有特别说明的时候，默认状态为合并状态。
+
