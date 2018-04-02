@@ -1,0 +1,17 @@
+HTML5新特性：
+	1.新增拥有具体含义的标签：<article>、<footer>、<header>、<nav>、<section>
+	2.新增更加智能的表单类型：calendar、date、time、email、url、search
+	3.让Web程序更加独立，减少了对第三方插件的依赖。
+	4.对本地离线存储的更好支持：提供两种在客户端存储数据的新方法:
+		a.localStorage--没有时间限制的数据存储
+		b.sessionStrage--针对一个sessio的数据存储
+	
+	5.HTML5即时二维绘画，引入画布：其中的canvas元素使用JavaScript在网页上绘制图像。
+	6.JS支持多线程：在不影响UI update及浏览器一与用户交互的情况下，前端做大规模运算，只能通过setTimeout之类的去模拟多线程。但JS新增的HTML5 Web Worker对象原生的就支持多线程。
+	7.WebSockets让跨域请求、长连接、数据推送变得简单：他用于解决浏览器与后台服务器双向通讯的问题。
+	8.在处理语法问题上更加灵活。
+	9.文件API让文件上传和操纵文件更简单。
+
+HTML5与HTML4的区别：
+	1.取消了一些过时的标签：acronym, applet, basefont, big, center, dir, font, frame, frameset, isindex, noframes, strike,tt
+	2.添加了一些新的元素：<section>, <video>, <progress>, <nav>, <meter>, <time>, <aside>, <canvas>等。
