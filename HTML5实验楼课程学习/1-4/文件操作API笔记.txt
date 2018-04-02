@@ -1,0 +1,63 @@
+几个重要的JS对象：
+	1.FileList对象：File对象的几何，在HTML4中文件上传控件只接受一个文件，在新标准中，只需要设置multiple，就可以支持多文件上传，从此标签中获取files属性就是FileList对象实例。
+	举例：<input type="file" multiple="multiple" name="fileDemo" id="fileDemo">
+	FileList对象的API的原型：
+		interface FileList {
+     			 getter File? item(unsigned long index);
+     			 readonly attribute unsigned long length;
+		};
+
+	2.Blob对象：原始数据对象，提供Slice方法可以读取原始数据中的某块数据，包含属性：size(数据的大小)、type（数据的MIME类型）
+	API原型：
+		interface Blob {
+    			readonly attribute unsigned long long size;
+   		 	readonly attribute DOMString type;
+    			//slice Blob into byte-ranged chunks     
+    			Blob slice(
+        			optional long long start,
+        			optional long long end,
+        			optional DOMString contentType
+   			 ); 
+		};
+
+	3.File对象：承自Blob对象，指向一个具体的文件，属性：name（文件名），lastModifiedDate(最后修改的时间)，W3C（万维网）的标准：
+		interface File : Blob {
+    			readonly attribute DOMString name;
+    			readonly attribute Date lastModifiedDate;
+		};
+
+	4.FileReader对象：被设计用于读取文件里面的数据，提供三个常用的读取文件数据方法，另外读取文件数据使用了异步的方式，非常高效。W3C标准：
+		interface FileReader: EventTarget {
+    			// async read methods
+    			void readAsArrayBuffer(Blob blob);
+   			void readAsBinaryString(Blob blob);
+    			void readAsText(Blob blob, optional DOMString encoding);
+    			void readAsDataURL(Blob blob);
+
+    			void abort();
+
+    			// states  
+    			const unsigned short EMPTY = 0;
+    			const unsigned short LOADING = 1;
+   			const unsigned short DONE = 2;
+
+    			readonly attribute unsigned short readyState;
+
+    			// File or Blob data
+    			readonly attribute any result;
+    			readonly attribute DOMError error;
+
+    			// event handler attributes
+    			attribute [TreatNonCallableAsNull] Function? onloadstart;
+    			attribute [TreatNonCallableAsNull] Function? onprogress;
+    			attribute [TreatNonCallableAsNull] Function? onload;
+    			attribute [TreatNonCallableAsNull] Function? onabort;
+    			attribute [TreatNonCallableAsNull] Function? onerror;
+    			attribute [TreatNonCallableAsNull] Function? onloadend;
+};
+		这个对象非常重要，提供了四个读取文件数据的方法，这些方法都是用异步的方式读取数据，读取成功后就直接将结果放入属性result中，所以一般就是直接取数据，然后监听此对象的onload事件，在实践中读取result属性，再做后续处理，当然abort就是停止读取的方法。
+	FileReader对象的三个读取文件数据方法：
+	a.readAsBinaryString(Blob blob):传入一个Blob对象，然后读取数据的结果作为二进制字符串的形式，放入FileReader的result属性中。
+	b.readAsText(Blob blob,option DOMString encoding):第一个参数传入Blob对象，然后第二个参数传入编码格式，异步将数据读取成功后放入result属性中，读取的内容是普通文本字符串的形式。
+	c.readAsDataURL(Blob blob)：传入一个Blob对象，读取内容可以作为URL属性，即可以将一张图片的结果指向给一个img的src属性。
+
