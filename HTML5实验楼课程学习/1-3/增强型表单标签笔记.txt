@@ -17,3 +17,19 @@
             <option value="HTML5"></option>
             <option value="input标签"></option>
         </datalist>
+
+HTML5表单新属性：
+	1.input表单新增加的特有属性：
+	a.autofocus属性，demo:<input type="text" autofocus="autofocus"/>此属性可以设置当前页面中input标签加载完毕后获得焦点。
+	b.max、min、step：这些上面介绍过，都是跟数字相关。
+	c.placeholder：提示信息属性。
+	d.multiple：用于文件上传控件，设置此属性后，允许多个文件。
+	e.校验属性：设置了required属性后预示着当前文本框在提交前必须有数据输入，而这一切都是由浏览器自动完成。还添加了pattern正则表达式校验：
+	<input type="text" form="autofocus" required pattern="\d+" name="demo" />
+	f.form属性:任何一个标签都可以指定它所属于一个表单，而不是必须在中进行包裹了:<input type="text" form="demoform" name="demo" />
+	
+	2.form表单新增加的属性：
+	a.novalidate属性规定在提交表单时不应该验证 form或input域：
+	<form action="" method="post" novalidate="true"></form>
+
+	b.autocomplete属性规定form或input域应该拥有自动完成功能
