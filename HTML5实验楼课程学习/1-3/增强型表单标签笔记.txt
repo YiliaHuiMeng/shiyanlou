@@ -1,0 +1,19 @@
+增强型表单标签：
+	1.Number类型input标签：<input type="number" name="demoNumber" min="1" max="100" step="1"/>,其中name:表单提交的key值，min:当前输入框输入的最小值，max:当前输入最大值，step:标识点击增大减小的步长。
+	2.Email类型input标签：<input type="email" name="email" placeholder="请输入当前注册邮箱"/>，当表单在提交前，此文本框会自动校验是否会符合邮箱的正则表达式。
+	3.URL类型input标签：<input type="url" placeholder="请输入网址" name="url"/>
+	4.Tel类型的input标签：<input type="tel" placeholder="输入电话" name="phone"/>
+	5.range类型的input标签：<input type="range" min="0" max="50" step="5" name="rangedemo" value="0">，这个标签加入后，输入范围的数据变得非常简单容易，而且非常标准，用户输入体验度高。
+		他可以与表单中的output标签一块使用，达到联动的效果： <form oninput="output.value=parseInt(range.value)">
+            <input type="range" min="0" max="100" step="5" name="range" value="0"/>
+            <output name="output">0</output>
+        </form>
+	6.新的日期、时间、月份、星期input标签：包括month、time、week、datetime、datetime-local。<input type="date" name="datedemo">
+	7.颜色选择input标签：<input type="color" name="colordemo">
+	8.input标签自动完成功能： 
+	<input type="text" autocomplete="on" name="demoAutoComplete" list="autoNames" />
+        <datalist id="autoNames">
+            <option value="实验楼"></option>
+            <option value="HTML5"></option>
+            <option value="input标签"></option>
+        </datalist>

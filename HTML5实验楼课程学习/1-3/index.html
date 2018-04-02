@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>my page</title>
+    </head>
+    <body>
+        <input type="number" name="demoNumber" min="1" max="100" step="1"/>
+        <input type="email" name="email" placeholder="请输入当前注册邮箱"/>
+        <input type="url" placeholder="请输入网址" name="url"/>
+        <input type="tel" placeholder="输入电话" name="phone"/>
+        <input type="range" min="0" max="50" step="5" name="rangedemo" value="0">
+        <form oninput="output.value=parseInt(range.value)">
+            <input type="range" min="0" max="100" step="5" name="range" value="0"/>
+            <output name="output">0</output>
+        </form>
+        <input type="date" name="datedemo">
+        <input type="color" name="colordemo">
+        <input type="text" autocomplete="on" name="demoAutoComplete" list="autoNames" />
+        <datalist id="autoNames">
+            <option value="实验楼"></option>
+            <option value="HTML5"></option>
+            <option value="input标签"></option>
+        </datalist>
+        <input type="text" form="autofocus" required pattern="\d+" name="demo" />
+        <input type="text" form="demoform" name="demo" />
+        <form action="" method="post" novalidate="true"></form>
+    </body>
+</html>

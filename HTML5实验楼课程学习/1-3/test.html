@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>my page</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>表单演示</legend>
+            <form action="" method="post" id="form1" oninput="output.value=parseInt(range.value)">
+                <input type="text" autofocus="autofocus" required pattern="\d+" name="auto" placeholder="必填"/>
+                <input type="number" name="demoNumber" min="1" max="100" step="2"/>
+                <input type="email" name="email" placeholder="请输入邮箱"/>
+                <input type="url" name="url" placeholder="请输入正确的网址"/>
+                <br/>
+                颜色：<input type="color" name="color"/>
+                日期：<input type="datetime" name="time"/>
+                <br/>
+                <br/>
+                <input type="range" min="0" max="50" step="5" name="range" value="0">
+                <output name="output">0</output>
+                <br/>
+                <input type="submit" value="提交表单">
+             </form>
+            <input type="text" form="form1" name="demo"/>
+        </fieldset>
+    </body>
+</html>
