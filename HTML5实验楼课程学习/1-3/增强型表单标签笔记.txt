@@ -1,16 +1,16 @@
-ÔöÇ¿ÐÍ±íµ¥±êÇ©£º
+ï»¿å¢žå¼ºåž‹è¡¨å•æ ‡ç­¾ï¼š
 	
-	1.NumberÀàÐÍinput±êÇ©£º<input type="number" name="demoNumber" min="1" max="100" step="1"/>,ÆäÖÐname:±íµ¥Ìá½»µÄkeyÖµ£¬min:µ±Ç°ÊäÈë¿òÊäÈëµÄ×îÐ¡Öµ£¬max:µ±Ç°ÊäÈë×î´óÖµ£¬step:±êÊ¶µã»÷Ôö´ó¼õÐ¡µÄ²½³¤¡£
+	1.Numberç±»åž‹inputæ ‡ç­¾ï¼š<input type="number" name="demoNumber" min="1" max="100" step="1"/>,å…¶ä¸­name:è¡¨å•æäº¤çš„keyå€¼ï¼Œmin:å½“å‰è¾“å…¥æ¡†è¾“å…¥çš„æœ€å°å€¼ï¼Œmax:å½“å‰è¾“å…¥æœ€å¤§å€¼ï¼Œstep:æ ‡è¯†ç‚¹å‡»å¢žå¤§å‡å°çš„æ­¥é•¿ã€‚
 	
-	2.EmailÀàÐÍinput±êÇ©£º<input type="email" name="email" placeholder="ÇëÊäÈëµ±Ç°×¢²áÓÊÏä"/>£¬µ±±íµ¥ÔÚÌá½»Ç°£¬´ËÎÄ±¾¿ò»á×Ô¶¯Ð£ÑéÊÇ·ñ»á·ûºÏÓÊÏäµÄÕýÔò±í´ïÊ½¡£
+	2.Emailç±»åž‹inputæ ‡ç­¾ï¼š<input type="email" name="email" placeholder="è¯·è¾“å…¥å½“å‰æ³¨å†Œé‚®ç®±"/>ï¼Œå½“è¡¨å•åœ¨æäº¤å‰ï¼Œæ­¤æ–‡æœ¬æ¡†ä¼šè‡ªåŠ¨æ ¡éªŒæ˜¯å¦ä¼šç¬¦åˆé‚®ç®±çš„æ­£åˆ™è¡¨è¾¾å¼ã€‚
 	
-	3.URLÀàÐÍinput±êÇ©£º<input type="url" placeholder="ÇëÊäÈëÍøÖ·" name="url"/>
+	3.URLç±»åž‹inputæ ‡ç­¾ï¼š<input type="url" placeholder="è¯·è¾“å…¥ç½‘å€" name="url"/>
 	
-	4.TelÀàÐÍµÄinput±êÇ©£º<input type="tel" placeholder="ÊäÈëµç»°" name="phone"/>
+	4.Telç±»åž‹çš„inputæ ‡ç­¾ï¼š<input type="tel" placeholder="è¾“å…¥ç”µè¯" name="phone"/>
 	
-	5.rangeÀàÐÍµÄinput±êÇ©£º<input type="range" min="0" max="50" step="5" name="rangedemo" value="0">£¬Õâ¸ö±êÇ©¼ÓÈëºó£¬ÊäÈë·¶Î§µÄÊý¾Ý±äµÃ·Ç³£¼òµ¥ÈÝÒ×£¬¶øÇÒ·Ç³£±ê×¼£¬ÓÃ»§ÊäÈëÌåÑé¶È¸ß¡£
+	5.rangeç±»åž‹çš„inputæ ‡ç­¾ï¼š<input type="range" min="0" max="50" step="5" name="rangedemo" value="0">ï¼Œè¿™ä¸ªæ ‡ç­¾åŠ å…¥åŽï¼Œè¾“å…¥èŒƒå›´çš„æ•°æ®å˜å¾—éžå¸¸ç®€å•å®¹æ˜“ï¼Œè€Œä¸”éžå¸¸æ ‡å‡†ï¼Œç”¨æˆ·è¾“å…¥ä½“éªŒåº¦é«˜ã€‚
 		
-	Ëû¿ÉÒÔÓë±íµ¥ÖÐµÄoutput±êÇ©Ò»¿éÊ¹ÓÃ£¬´ïµ½Áª¶¯µÄÐ§¹û£º 	
+	ä»–å¯ä»¥ä¸Žè¡¨å•ä¸­çš„outputæ ‡ç­¾ä¸€å—ä½¿ç”¨ï¼Œè¾¾åˆ°è”åŠ¨çš„æ•ˆæžœï¼š 	
 	<form oninput="output.value=parseInt(range.value)">
             		<input type="range" min="0" max="100" step="5" name="range" value="0"/>
             
@@ -18,47 +18,47 @@
        
 	 </form>
 	
-	6.ÐÂµÄÈÕÆÚ¡¢Ê±¼ä¡¢ÔÂ·Ý¡¢ÐÇÆÚinput±êÇ©£º°üÀ¨month¡¢time¡¢week¡¢datetime¡¢datetime-local¡£<input type="date" name="datedemo">
+	6.æ–°çš„æ—¥æœŸã€æ—¶é—´ã€æœˆä»½ã€æ˜ŸæœŸinputæ ‡ç­¾ï¼šåŒ…æ‹¬monthã€timeã€weekã€datetimeã€datetime-localã€‚<input type="date" name="datedemo">
 	
-	7.ÑÕÉ«Ñ¡Ôñinput±êÇ©£º<input type="color" name="colordemo">
+	7.é¢œè‰²é€‰æ‹©inputæ ‡ç­¾ï¼š<input type="color" name="colordemo">
 	
-	8.input±êÇ©×Ô¶¯Íê³É¹¦ÄÜ£º 
+	8.inputæ ‡ç­¾è‡ªåŠ¨å®ŒæˆåŠŸèƒ½ï¼š 
 	
 	<input type="text" autocomplete="on" name="demoAutoComplete" list="autoNames" />
         
 	<datalist id="autoNames">
            
-		 <option value="ÊµÑéÂ¥"></option>
+		 <option value="å®žéªŒæ¥¼"></option>
             
 		 <option value="HTML5"></option>
            	
-		 <option value="input±êÇ©"></option>
+		 <option value="inputæ ‡ç­¾"></option>
        
 	 </datalist>
 
 
 
-HTML5±íµ¥ÐÂÊôÐÔ£º
+HTML5è¡¨å•æ–°å±žæ€§ï¼š
 	
-	1.input±íµ¥ÐÂÔö¼ÓµÄÌØÓÐÊôÐÔ£º
+	1.inputè¡¨å•æ–°å¢žåŠ çš„ç‰¹æœ‰å±žæ€§ï¼š
 	
-		a.autofocusÊôÐÔ£¬demo:<input type="text" autofocus="autofocus"/>´ËÊôÐÔ¿ÉÒÔÉèÖÃµ±Ç°Ò³ÃæÖÐinput±êÇ©¼ÓÔØÍê±Ïºó»ñµÃ½¹µã¡£
+		a.autofocuså±žæ€§ï¼Œdemo:<input type="text" autofocus="autofocus"/>æ­¤å±žæ€§å¯ä»¥è®¾ç½®å½“å‰é¡µé¢ä¸­inputæ ‡ç­¾åŠ è½½å®Œæ¯•åŽèŽ·å¾—ç„¦ç‚¹ã€‚
 	
-		b.max¡¢min¡¢step£ºÕâÐ©ÉÏÃæ½éÉÜ¹ý£¬¶¼ÊÇ¸úÊý×ÖÏà¹Ø¡£
+		b.maxã€minã€stepï¼šè¿™äº›ä¸Šé¢ä»‹ç»è¿‡ï¼Œéƒ½æ˜¯è·Ÿæ•°å­—ç›¸å…³ã€‚
 	
-		c.placeholder£ºÌáÊ¾ÐÅÏ¢ÊôÐÔ¡£
+		c.placeholderï¼šæç¤ºä¿¡æ¯å±žæ€§ã€‚
 	
-		d.multiple£ºÓÃÓÚÎÄ¼þÉÏ´«¿Ø¼þ£¬ÉèÖÃ´ËÊôÐÔºó£¬ÔÊÐí¶à¸öÎÄ¼þ¡£
-			e.Ð£ÑéÊôÐÔ£ºÉèÖÃÁËrequiredÊôÐÔºóÔ¤Ê¾×Åµ±Ç°ÎÄ±¾¿òÔÚÌá½»Ç°±ØÐëÓÐÊý¾ÝÊäÈë£¬¶øÕâÒ»ÇÐ¶¼ÊÇÓÉä¯ÀÀÆ÷×Ô¶¯Íê³É¡£»¹Ìí¼ÓÁËpatternÕýÔò±í´ïÊ½Ð£Ñé£º
+		d.multipleï¼šç”¨äºŽæ–‡ä»¶ä¸Šä¼ æŽ§ä»¶ï¼Œè®¾ç½®æ­¤å±žæ€§åŽï¼Œå…è®¸å¤šä¸ªæ–‡ä»¶ã€‚
+			e.æ ¡éªŒå±žæ€§ï¼šè®¾ç½®äº†requiredå±žæ€§åŽé¢„ç¤ºç€å½“å‰æ–‡æœ¬æ¡†åœ¨æäº¤å‰å¿…é¡»æœ‰æ•°æ®è¾“å…¥ï¼Œè€Œè¿™ä¸€åˆ‡éƒ½æ˜¯ç”±æµè§ˆå™¨è‡ªåŠ¨å®Œæˆã€‚è¿˜æ·»åŠ äº†patternæ­£åˆ™è¡¨è¾¾å¼æ ¡éªŒï¼š
 	<input type="text" form="autofocus" required pattern="\d+" name="demo" />
 	
-		f.formÊôÐÔ:ÈÎºÎÒ»¸ö±êÇ©¶¼¿ÉÒÔÖ¸¶¨ËüËùÊôÓÚÒ»¸ö±íµ¥£¬¶ø²»ÊÇ±ØÐëÔÚÖÐ½øÐÐ°ü¹üÁË:<input type="text" form="demoform" name="demo" />
+		f.formå±žæ€§:ä»»ä½•ä¸€ä¸ªæ ‡ç­¾éƒ½å¯ä»¥æŒ‡å®šå®ƒæ‰€å±žäºŽä¸€ä¸ªè¡¨å•ï¼Œè€Œä¸æ˜¯å¿…é¡»åœ¨ä¸­è¿›è¡ŒåŒ…è£¹äº†:<input type="text" form="demoform" name="demo" />
 	
 	
-	2.form±íµ¥ÐÂÔö¼ÓµÄÊôÐÔ£º
+	2.formè¡¨å•æ–°å¢žåŠ çš„å±žæ€§ï¼š
 	
-		a.novalidateÊôÐÔ¹æ¶¨ÔÚÌá½»±íµ¥Ê±²»Ó¦¸ÃÑéÖ¤ form»òinputÓò£º
+		a.novalidateå±žæ€§è§„å®šåœ¨æäº¤è¡¨å•æ—¶ä¸åº”è¯¥éªŒè¯ formæˆ–inputåŸŸï¼š
 	<form action="" method="post" novalidate="true"></form>
 
 	
-	b.autocompleteÊôÐÔ¹æ¶¨form»òinputÓòÓ¦¸ÃÓµÓÐ×Ô¶¯Íê³É¹¦ÄÜ
+	b.autocompleteå±žæ€§è§„å®šformæˆ–inputåŸŸåº”è¯¥æ‹¥æœ‰è‡ªåŠ¨å®ŒæˆåŠŸèƒ½
