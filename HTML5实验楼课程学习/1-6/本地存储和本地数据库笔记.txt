@@ -1,34 +1,34 @@
-HTML5±¾µØ´æ´¢ºÍ±¾µØÊý¾Ý¿â±Ê¼Ç£º
-	Îª½â¾ö¿Í»§¶Ëä¯ÀÀÆ÷³Ö¾Ã»¯µÄ±£´æÄÚÈÝ£¬HTML5¼ÓÈëÁË±¾µØ´æ´¢ºÍ±¾µØÊý¾Ý¿â¡£
-	±¾µØ´æ´¢±³¾°£º
-	1.CookieµÄÏÞÖÆ£ºa.´ó¶àÊýä¯ÀÀÆ÷Ö§³Ö×î´óÎª4096×Ö½ÚµÄCookie
-			b.ä¯ÀÀÆ÷ÏÞÖÆÕ¾µãÔÚÓÃ»§¼ÆËã»úÉÏ´æ´¢µÄCookieÊýÁ¿£¬´ó¶àÊýä¯ÀÀÆ÷Ã¿¸öÕ¾µã´æ´¢20¸öCookie£¬Èç¹û¹ý¶à£¬Ôò×î¾ÉµÄCookie±ã»á±»¶ªÆú¡£
-			c.ÓÐÐ©ä¯ÀÀÆ÷»á¶Ô½«½ÓÊÜµÄÀ´×ÔËùÓÐÕ¾µãµÄCookie×ÜÊý×ö³ö¾ø¶ÔÏÞÖÆ£¬Í¨³£Îª300¸ö¡£
-			d.CookieÄ¬ÈÏµÄÇé¿ö¶¼»áËæ×ÅHttpÇëÇó·¢ËÍµ½ºóÌ¨·þÎñÆ÷£¬µ«²¢²»ÊÇËùÓÐÇëÇó¶¼ÐèÒªCookie,±ÈÈçjs,css,Í¼Æ¬µÈÇëÇó¡£
-	Îª½â¾öÕâÐ©ÏÞÖÆ£¬HTML5Í¨¹ýJSµÄÐÂAPI¾ÍÄÜÖ±½Ó´¢´æ´óÁ¿Êý¾Ýµ½¿Í»§¶Ëä¯ÀÀÆ÷¶øÇÒÖ§³Ö¸´ÔÓµÄ±¾µØÊý¾Ý¿â£¬ÈÃJS¸üÓÐÐ§¡£
-	HTML5Ö¸³öÁ½ÖÖ£ºa.ÓÀ¾ÃÐÔ±¾µØ´æ´¢£¨localStorage£©,b.»á»°¼¶±ðµÄ±¾µØ´æ´¢£¨sessionStorage£©
+ï»¿HTML5æœ¬åœ°å­˜å‚¨å’Œæœ¬åœ°æ•°æ®åº“ç¬”è®°ï¼š
+	ä¸ºè§£å†³å®¢æˆ·ç«¯æµè§ˆå™¨æŒä¹…åŒ–çš„ä¿å­˜å†…å®¹ï¼ŒHTML5åŠ å…¥äº†æœ¬åœ°å­˜å‚¨å’Œæœ¬åœ°æ•°æ®åº“ã€‚
+	æœ¬åœ°å­˜å‚¨èƒŒæ™¯ï¼š
+	1.Cookieçš„é™åˆ¶ï¼ša.å¤§å¤šæ•°æµè§ˆå™¨æ”¯æŒæœ€å¤§ä¸º4096å­—èŠ‚çš„Cookie
+			b.æµè§ˆå™¨é™åˆ¶ç«™ç‚¹åœ¨ç”¨æˆ·è®¡ç®—æœºä¸Šå­˜å‚¨çš„Cookieæ•°é‡ï¼Œå¤§å¤šæ•°æµè§ˆå™¨æ¯ä¸ªç«™ç‚¹å­˜å‚¨20ä¸ªCookieï¼Œå¦‚æžœè¿‡å¤šï¼Œåˆ™æœ€æ—§çš„Cookieä¾¿ä¼šè¢«ä¸¢å¼ƒã€‚
+			c.æœ‰äº›æµè§ˆå™¨ä¼šå¯¹å°†æŽ¥å—çš„æ¥è‡ªæ‰€æœ‰ç«™ç‚¹çš„Cookieæ€»æ•°åšå‡ºç»å¯¹é™åˆ¶ï¼Œé€šå¸¸ä¸º300ä¸ªã€‚
+			d.Cookieé»˜è®¤çš„æƒ…å†µéƒ½ä¼šéšç€Httpè¯·æ±‚å‘é€åˆ°åŽå°æœåŠ¡å™¨ï¼Œä½†å¹¶ä¸æ˜¯æ‰€æœ‰è¯·æ±‚éƒ½éœ€è¦Cookie,æ¯”å¦‚js,css,å›¾ç‰‡ç­‰è¯·æ±‚ã€‚
+	ä¸ºè§£å†³è¿™äº›é™åˆ¶ï¼ŒHTML5é€šè¿‡JSçš„æ–°APIå°±èƒ½ç›´æŽ¥å‚¨å­˜å¤§é‡æ•°æ®åˆ°å®¢æˆ·ç«¯æµè§ˆå™¨è€Œä¸”æ”¯æŒå¤æ‚çš„æœ¬åœ°æ•°æ®åº“ï¼Œè®©JSæ›´æœ‰æ•ˆã€‚
+	HTML5æŒ‡å‡ºä¸¤ç§ï¼ša.æ°¸ä¹…æ€§æœ¬åœ°å­˜å‚¨ï¼ˆlocalStorageï¼‰,b.ä¼šè¯çº§åˆ«çš„æœ¬åœ°å­˜å‚¨ï¼ˆsessionStorageï¼‰
 
-	2.localStorage:JSÐÂÔöAPIÖÐµÄlocalStorage¶ÔÏó£¬±ãÓÚÓÃ»§´æ´¢ÓÀ¾Ã´æ´¢µÄWeb¶ËÊý¾Ý£¬²»»áËæ×ÅHttpÇëÇó·¢ËÍÖÁºóÌ¨£¬ÇÒ»ù±¾²»ÓÃ¿¼ÂÇ´æ´¢Êý¾ÝµÄ´óÐ¡¡£
-	Ìá¹©µÄËÄÖÖ·½·¨£ºa.setItem(key,value):Ìí¼Ó±¾µØ´æ´¢Êý¾Ý
-			b.getItem(key):Í¨¹ýkey»ñÈ¡ÏàÓ¦µÄvalue
-			c.removeItem(key):Í¨¹ýkeyÉ¾³ý±¾µØÊý¾Ý
-			d.clear():Çå¿ÕÊý¾Ý
-	3.sessionStorage£ºJSÐÂÔö¶ÔÏó£¬Í¨¹ýËü¿ÉÒÔÖ±½Ó²Ù×÷´æ´¢ÔÚä¯ÀÀÆ÷ÖÐµÄ»á»°¼¶±ðµÄwebStorage¡£´æ´¢ÔÚ¶ÔÏóÖÐµÄÊý¾ÝÊ×ÏÈÊÇkey-valueÐÎÊ½µÄ£¬Óëä¯ÀÀÆ÷µ±Ç°»á»°ÓÐ¹Ø£¬»á»°½áÊøºó£¬Êý¾Ý»á×Ô¶¯Çå³ý¡£
-	Ìá¹©µÄËÄÖÖ·½·¨£ºa.setItem(key,value):Ìí¼Ó±¾µØ´æ´¢Êý¾Ý
-			b.getItem(key):Í¨¹ýkey»ñÈ¡ÏàÓ¦µÄvalue
-			c.removeItem(key):Í¨¹ýkeyÉ¾³ý±¾µØÊý¾Ý
-			d.clear():Çå¿ÕÊý¾Ý
-	ÒÔÉÏÁ½ÖÖÖ»ÄÜÌá¹©´æ´¢¼òµ¥Êý¾Ý½á¹¹µÄÊý¾Ý¡£
+	2.localStorage:JSæ–°å¢žAPIä¸­çš„localStorageå¯¹è±¡ï¼Œä¾¿äºŽç”¨æˆ·å­˜å‚¨æ°¸ä¹…å­˜å‚¨çš„Webç«¯æ•°æ®ï¼Œä¸ä¼šéšç€Httpè¯·æ±‚å‘é€è‡³åŽå°ï¼Œä¸”åŸºæœ¬ä¸ç”¨è€ƒè™‘å­˜å‚¨æ•°æ®çš„å¤§å°ã€‚
+	æä¾›çš„å››ç§æ–¹æ³•ï¼ša.setItem(key,value):æ·»åŠ æœ¬åœ°å­˜å‚¨æ•°æ®
+			b.getItem(key):é€šè¿‡keyèŽ·å–ç›¸åº”çš„value
+			c.removeItem(key):é€šè¿‡keyåˆ é™¤æœ¬åœ°æ•°æ®
+			d.clear():æ¸…ç©ºæ•°æ®
+	3.sessionStorageï¼šJSæ–°å¢žå¯¹è±¡ï¼Œé€šè¿‡å®ƒå¯ä»¥ç›´æŽ¥æ“ä½œå­˜å‚¨åœ¨æµè§ˆå™¨ä¸­çš„ä¼šè¯çº§åˆ«çš„webStorageã€‚å­˜å‚¨åœ¨å¯¹è±¡ä¸­çš„æ•°æ®é¦–å…ˆæ˜¯key-valueå½¢å¼çš„ï¼Œä¸Žæµè§ˆå™¨å½“å‰ä¼šè¯æœ‰å…³ï¼Œä¼šè¯ç»“æŸåŽï¼Œæ•°æ®ä¼šè‡ªåŠ¨æ¸…é™¤ã€‚
+	æä¾›çš„å››ç§æ–¹æ³•ï¼ša.setItem(key,value):æ·»åŠ æœ¬åœ°å­˜å‚¨æ•°æ®
+			b.getItem(key):é€šè¿‡keyèŽ·å–ç›¸åº”çš„value
+			c.removeItem(key):é€šè¿‡keyåˆ é™¤æœ¬åœ°æ•°æ®
+			d.clear():æ¸…ç©ºæ•°æ®
+	ä»¥ä¸Šä¸¤ç§åªèƒ½æä¾›å­˜å‚¨ç®€å•æ•°æ®ç»“æž„çš„æ•°æ®ã€‚
 	
-	±¾µØÊý¾Ý£º
-	¶ÔÓÚ¸´ÔÓµÄWebÓ¦ÓÃÊý¾Ý£¬HTML5Ìá¹©ÁËä¯ÀÀÆ÷¶ËÊý¾Ý¿âÖ§³Ö£¬ÔÊÐíÖ±½ÓÍ¨¹ýJSµÄAPIÔÚä¯ÀÀÆ÷´´½¨±¾µØÊý¾Ý¿â£¬Ö§³Ö±ê×¼µÄSQLµÄCRUD²Ù×÷£¬ÈÃÀëÏßµÄWebÓ¦ÓÃ¸ü¼Ó·½±ã´æ´¢½á¹¹»¯µÄÊý¾Ý¡£
-	²Ù×÷±¾µØÊý¾Ý¿âµÄ»ù±¾²½Öè£º
-			a.openDataBase£¨£©·½·¨:´´½¨Ò»¸ö·ÃÎÊÊý¾Ý¿âµÄ¶ÔÏó
-			b.ÀûÓÃ·ÃÎÊÊý¾Ý¿âµÄ¶ÔÏóÖ´ÐÐtransaction·½·¨£¬Í¨¹ý´Ë·½·¨ÉèÖÃ¿ªÆôÊÂÎñ³É¹¦µÄÊÂ¼þÏàÓ¦·½·¨£¬ÔÚÊÂ¼þÏìÓ¦·½·¨ÖÐÖ´ÐÐSQL.
-			c.Í¨¹ýexecuteSql·½·¨Ö´ÐÐ²éÑ¯¡£
-	1.openDataBase£¨£©·½·¨£º  
-		var dataBase = openDatabase("student","1.0","Ñ§Éú±í"£¬1024*1024,function())£¨Êý¾Ý¿âÃû³Æ£¬Êý¾Ý¿â°æ±¾ºÅ£¨Ò»°ãÎª1.0£¬¿ÉÌî¿É²»Ìî£©£¬¶ÔÊý¾Ý¿âµÄÃèÊö£¬ÉèÖÃ·ÖÅäµÄÊý¾Ý¿âµÄ´óÐ¡£¨µ¥Î»Îªkb£©£¬»Øµ÷º¯Êý£©
-	2.db.transaction·½·¨£º¿ÉÉèÖÃ»Øµ÷º¯Êý£¬´Ëº¯Êý½ÓÊÕÒ»¸ö²ÎÊý£¬¸Ã²ÎÊýÎªÎÒÃÇ¿ªÆôÊÂÎñµÄ¶ÔÏó£¬Í¨¹ýËü¿ÉÒÔÖ´ÐÐSQL½Å±¾¡£
-	3.executeSql·½·¨£ºÖ´ÐÐ²éÑ¯¡£
-		ts.executeSql(sqlQuery£¬[value1,value2..],dataHandler,errorHandle)£¨ÐèÒª¾ßÌåÖ´ÐÐµÄSQLÓï¾ä£¬SQLÓï¾äÖÐËùÓÐÊ¹ÓÃµ½µÄ²ÎÊýµÄÊý×é£¬Êý×éÖÐµÄ²ÎÊýÔÚSQLÓï¾äÖÐÒªÓÃ¡°£¿¡±´úÌæ£¬È»ºóÒÀ´Î·ÅÈë£¬Ö´ÐÐ³É¹¦Ê±µÄ»Øµ÷º¯Êý£¬Ö´ÐÐÊ§°ÜµÄ»Øµ÷º¯Êý£©	
+	æœ¬åœ°æ•°æ®ï¼š
+	å¯¹äºŽå¤æ‚çš„Webåº”ç”¨æ•°æ®ï¼ŒHTML5æä¾›äº†æµè§ˆå™¨ç«¯æ•°æ®åº“æ”¯æŒï¼Œå…è®¸ç›´æŽ¥é€šè¿‡JSçš„APIåœ¨æµè§ˆå™¨åˆ›å»ºæœ¬åœ°æ•°æ®åº“ï¼Œæ”¯æŒæ ‡å‡†çš„SQLçš„CRUDæ“ä½œï¼Œè®©ç¦»çº¿çš„Webåº”ç”¨æ›´åŠ æ–¹ä¾¿å­˜å‚¨ç»“æž„åŒ–çš„æ•°æ®ã€‚
+	æ“ä½œæœ¬åœ°æ•°æ®åº“çš„åŸºæœ¬æ­¥éª¤ï¼š
+			a.openDataBaseï¼ˆï¼‰æ–¹æ³•:åˆ›å»ºä¸€ä¸ªè®¿é—®æ•°æ®åº“çš„å¯¹è±¡
+			b.åˆ©ç”¨è®¿é—®æ•°æ®åº“çš„å¯¹è±¡æ‰§è¡Œtransactionæ–¹æ³•ï¼Œé€šè¿‡æ­¤æ–¹æ³•è®¾ç½®å¼€å¯äº‹åŠ¡æˆåŠŸçš„äº‹ä»¶ç›¸åº”æ–¹æ³•ï¼Œåœ¨äº‹ä»¶å“åº”æ–¹æ³•ä¸­æ‰§è¡ŒSQL.
+			c.é€šè¿‡executeSqlæ–¹æ³•æ‰§è¡ŒæŸ¥è¯¢ã€‚
+	1.openDataBaseï¼ˆï¼‰æ–¹æ³•ï¼š  
+		var dataBase = openDatabase("student","1.0","å­¦ç”Ÿè¡¨"ï¼Œ1024*1024,function())ï¼ˆæ•°æ®åº“åç§°ï¼Œæ•°æ®åº“ç‰ˆæœ¬å·ï¼ˆä¸€èˆ¬ä¸º1.0ï¼Œå¯å¡«å¯ä¸å¡«ï¼‰ï¼Œå¯¹æ•°æ®åº“çš„æè¿°ï¼Œè®¾ç½®åˆ†é…çš„æ•°æ®åº“çš„å¤§å°ï¼ˆå•ä½ä¸ºkbï¼‰ï¼Œå›žè°ƒå‡½æ•°ï¼‰
+	2.db.transactionæ–¹æ³•ï¼šå¯è®¾ç½®å›žè°ƒå‡½æ•°ï¼Œæ­¤å‡½æ•°æŽ¥æ”¶ä¸€ä¸ªå‚æ•°ï¼Œè¯¥å‚æ•°ä¸ºæˆ‘ä»¬å¼€å¯äº‹åŠ¡çš„å¯¹è±¡ï¼Œé€šè¿‡å®ƒå¯ä»¥æ‰§è¡ŒSQLè„šæœ¬ã€‚
+	3.executeSqlæ–¹æ³•ï¼šæ‰§è¡ŒæŸ¥è¯¢ã€‚
+		ts.executeSql(sqlQueryï¼Œ[value1,value2..],dataHandler,errorHandle)ï¼ˆéœ€è¦å…·ä½“æ‰§è¡Œçš„SQLè¯­å¥ï¼ŒSQLè¯­å¥ä¸­æ‰€æœ‰ä½¿ç”¨åˆ°çš„å‚æ•°çš„æ•°ç»„ï¼Œæ•°ç»„ä¸­çš„å‚æ•°åœ¨SQLè¯­å¥ä¸­è¦ç”¨â€œï¼Ÿâ€ä»£æ›¿ï¼Œç„¶åŽä¾æ¬¡æ”¾å…¥ï¼Œæ‰§è¡ŒæˆåŠŸæ—¶çš„å›žè°ƒå‡½æ•°ï¼Œæ‰§è¡Œå¤±è´¥çš„å›žè°ƒå‡½æ•°ï¼‰	
 		
