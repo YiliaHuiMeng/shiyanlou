@@ -1,0 +1,84 @@
+canvas画布绘图API笔记：
+	认识canvas：canvas是一个画布，可以进行任何的线、图形、填充等操作，操作画图的是js。另外canvas即可以提供简单的二维矢量绘图，也提供三维绘图以及图片处理等一系列的API支持。
+	
+	canvas中的context对象：
+		1.必须在页面中添加Canvas标签：
+		<canvas id="demoCanvas" width="500" height="500">
+            		<p>Html5 canvas画布</p>
+        	</canvas>
+		width、height属性设置画布大小，id属性必须存在，用来作为当前Canvas的DOM对象。
+		2.创建完画布之后，通过canvas的Dom对象获取上下文（context），绘制图形：
+		 <script type="text/javascript">
+            		var canvasDom = document.getElementById("demoCanvas");//获取canvas元素
+            		var context = canvasDom.getContext('2d');//获取上下文
+       	 	 </script>
+
+		3.Context上下文默认两种绘制方式：a.绘制线（stroke）,b.填充（fill）。
+
+	利用Canvas绘制立体透明矩形：
+		绘制步骤如下：
+			1.绘制线：
+			var canvasDom = document.getElementById("demoCanvas");//获取canvas元素
+            		var context = canvasDom.getContext('2d');//获取上下文
+            		context.strokeStyle = "red"; //指定绘制线样式、颜色
+            		context.strokeRect(10,10,190,100);//绘制矩形，只有线，内容为空
+
+			2.填充：
+			 context.fillStyle = "blue";//填充矩阵
+            		 context.fillRect(110,110,100,100);
+
+	利用Canvas绘制线条：
+		<canvas id="demoCanvasLights" width="500" height="600"></canvas>
+        	<script type="text/javascript">
+            		var canvasDom1 = document.getElementById("demoCanvasLights");//获取canvas元素
+            		var context1 =canvasDom1.getContext('2d');//获取上下文
+            		context1.beginPath();//开始绘制路径
+            		context1.moveTo(20,20);//设置路径起点，坐标为（20,20）
+            		context1.lineTo(200,20);//绘制一条到坐标为（200,20）的直线
+            		context1.lineTo(400,20);
+            		context1.closePath();
+            		context1.lineWidth = 2.0;//设置线宽
+            		context1.strokeStyle = "#CC0000";//设置线的颜色
+            		context1.stroke();//进行线的着色，这时整条线才会可见
+        	</script>
+
+
+	利用Canvas绘制文本：
+
+		 <canvas id="demoCanvasText" width="500" height="600"></canvas>
+        	<script type="text/javascript">
+            		var canvasDom2 = document.getElementById("demoCanvasText");//获取canvas元素
+            		var context2 =canvasDom1.getContext('2d');//获取上下文
+            		context2.beginPath();//开始绘制路径
+            		context2.moveTo(200,200);//设置路径起点，坐标为（20,20）
+            		context2.font = "Bold 50px Arial";//设置字体
+            		context2.textAlign = "left";//设置对齐方式
+            		context2.fillStyle = "#005600";//设置填充颜色
+            		context2.fillText("Hello!",10,50);//设置字体内容以及在画布上的位置
+            		context2.strokeText("World!",10,100);//设置空心字
+        	</script>
+
+	利用Canvas绘制圆形及椭圆：
+		<canvas id="demoCanvasCircle" width="500" height="600"></canvas>
+        	<script type="text/javascript">
+            		var canvasDom3 = document.getElementById("demoCanvasCircle");//获取canvas元素
+            		var context3 =canvasDom1.getContext('2d');//获取上下文
+            		context3.beginPath();//开始绘制路径
+            		context3.arc(60,60,50,0,Math.PI * 2,true);//以（60,60）为圆心，50为半径，从0度到360度，PI为180度，最后一个代表顺逆时针旋转。
+            		context3.lineWidth=2.0;//线的宽度
+            		context3.strokeStyle = "#000";//线的样式
+            		context3.stroke();//绘制空心的，如果使用fill则为填充
+        	</script>
+	利用Canvas绘制图片：
+	        <canvas id="demoCanvasImage" width="500" height="600"></canvas>
+        	<script type="text/javascript">
+            		var canvasDom4 = document.getElementById("demoCanvasImage");//获取canvas元素
+            		var context4 =canvasDom1.getContext('2d');//获取上下文
+            		var image = new Image();//创建一张图片
+            		image.src = ""; //设置图片路径
+            		image.onload = function(){ //当图片加载完成后
+               	 	for(var i = 0;i<);i++){//输出10张照片，其中参数有：图片，坐标x,坐标y
+                    		context.drawImage(image,100+i*80,100+i*80);
+                		}
+            		}
+        	</script>
