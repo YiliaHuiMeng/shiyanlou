@@ -1,0 +1,33 @@
+JavaScript的特点:
+	JavaScript是一种脚本语言，它的解释器被称为JavaScript引擎。它被发明用于HTML网页上使用，为其增加动态效果。
+	现在所有的主流浏览器包含JavaScript引擎。它可以让网页呈现出各种特殊的效果，具有良好的用户互动体验。
+
+JavaScript简单易学：
+	它的语法和C/C++、Javad等语言类似，并且学习环境十分简单，无处不在，只需要浏览器和文本编辑器，无需另外安装配置编译器、解释器、IDE等
+
+第一个JavaScript程序：
+	以Hello World!为例子：JavaScript代码一般放在<script></script>标签里面。
+	<script type="text/javascript">
+            alert("hello world!");
+        </script>
+
+放置JavaScript的方式:
+	1.在head中的JavaScript:将<script></script>中的JavaScript脚本语言放置<head></head>中。
+		<head>
+        		<title></title>
+       			 <script type="text/javascript">
+            			alert("hello world!");
+        		</script>
+    		</head>
+
+	2.在body中的JavaScript:将<script></script>中的JavaScript脚本语言放置<body></body>中。
+		<body>
+        		<script type="text/javascript">
+            			alert("hello world!");
+        		</script>
+    		</body>
+	他们之间的区别就是放在Head中的要比在body中的先执行。head标签里的代码会在页面还未开始描绘制华之前被解析，而body里的代码则会在页面渲染的同时在读取到这段代码时才会被执行。
+
+外部的JavaScript
+	我们可以把JavaScript脚本语言单独放在.js文件中，在HTML中调用这个文件，建议最好养成这样的习惯。
+
