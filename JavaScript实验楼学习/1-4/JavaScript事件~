@@ -1,0 +1,21 @@
+JavaScript事件笔记：
+	事件：鼠标或者热键的动作。
+	事件驱动：鼠标或热键引发的一连串程序的动作。
+	事件处理程序：对时间进行处理程序或函数。
+
+	1.事件处理程序：某个事件发生的时候执行特定的JavaScript代码。
+	比如点击页面的某个按钮，执行对应的事件处理程序，弹出提示小窗口。
+
+	2.常用事件
+	.onclick	单击
+	.ondblclick	双击
+	.onfocus	元素获得焦点
+	.onblur		元素失去焦点
+	.onmouseover	鼠标移到某元素之上
+	.onmouseout	鼠标从某元素移开
+	.onmousedown	鼠标按钮被按下
+	.onmouseup	鼠标按钮被松开
+	.onkeydown	某个键盘按键被按下
+	.onkeyup	某个键盘按键被松开
+	.onkeypress	某个键盘案件被按下并松开
+	以上中，onmouseover、onmouseout事件可用于在鼠标移至HTML元素上和移出元素时触发函数。
