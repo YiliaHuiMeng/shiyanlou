@@ -1,0 +1,125 @@
+JavaScript对象笔记：
+	JavaScript是基于对象的语言。
+	对象：JavaScript的所有数据都可以被视为对象，而每个对象都有它的属性和方法。
+	对象的属性：反映该对象某些特定的性质的，如字符串的长度、图像的长宽、文字框里的文字等。
+	对象的方法：可以对特定对象做一些事情，如表单的“提交”，窗口的“滚动”等。
+
+	var my_var = "shiyanlou";  －－－－当申请变量的时候，创建了一个字符串对象，该对象拥有内建的属性my_var.length = 9;同时还有内建的方法：my_var.toUpperCase()方法（将字符转为大写）；my_var.charAt(n)方法（返回第n个字符）
+
+	1.创建对象的方式：
+		a.指定属性和方法：
+		student = new Object();
+            
+            	student.name = "Tom";
+            	student.age = "19";
+            
+            	student.study = function(){
+                	alert("studying");
+            	}
+            
+            	student.eat = function(){
+               		alert("eating");
+            	}
+	
+		b.以数组的方式，在外部指定属性：
+		var student = {};
+            	student.name = "Tom";
+
+		c.以数组的方式，在内部指定属性：
+		var student = {
+                	name:"Tom";
+                	age:"19";
+            	}
+
+		但是以上方法在创建多个对象的时候会产生大量重复的代码，所有我们可以采用函数的方式新建对象：
+		            function student(name,age){
+                		this.name = name;
+                		this.age = age;
+                
+                		this.study = function(){
+                    			alert("studing");
+               			};
+                
+                		thid.eat = function(){
+                    			alert("eating");
+                		};
+            		}
+		然后通过new创建对象的实例：
+		var student1 = new student('Tom','19');
+            	var student2 = new student('Jack','20');
+
+		对象存在的意义就是为了方便地操作数据，我们可以很容易地访问对象的属性或调用对象的方法，通过符号“.”：
+		var x = student1.name;
+            	var y = student1.age;
+            
+            	document.write(x);
+            	document.write(y);
+            
+            	student1.study();
+
+		反复访问某对像的时候，可以使用with语句简化操作不需要反复使用"."：
+		with(studen1){
+			var x = name;
+			var y = age;
+			study();
+			eat();
+		}
+
+		常用的内置对象：
+		1.String字符串对象：只有一个属性length，表示字符串中俄字符个数，包括所有的空格和符号。
+		2.String的方法：共19个内置方法，主要包括字符串页面中的显示、字体大小、字体颜色、字符的搜索以及字符的大小写转换等功能。
+		.charAt(n)：返回该字符串第n位的单个字符.
+		.charCodeAt(n)：返回该字符串第n位的单个字符的ASCII码。
+		.indexOf()从字符串第n位开始搜索，查找指定的字符串位置，如果没找到，则返回－1，否则返回位置。
+		.lastIndexOf()：与上一个相似，但是从末尾开始。
+		.split('分隔符')：将字符串按照指定的分隔符分开，返回数组。
+		.substring(n,m)：返回原字符串从n位置到m位置的子字符串。
+		.substr(n,x)：返回从原字符串n位置开始，长度为x的子字符串。
+		.toLowerCase()：返回原字符串所有大写字母变成小写字符串。
+		.toUpperCase()：返回原字符串所有小写字母变成大写字符串。
+		
+		3.Math对象：
+			常用属性值：
+			a.E:返回常数e(2.71821828……)
+			b.LN2:返回2的自然对数（ln2）
+			c.LN10:返回10的自然对数（ln10）
+			d.LOG2E:返回以2为底的e的对数（log2e）
+			e.LOG10E:返回以10为底的e的对数（log10e）
+			f:PI:返回3.1415926535……
+			g.SQRT1_2:返回1／2的平方根
+			h.SQRT2:返回2的平方根
+			
+			Math的内置方法：
+			.abs(x)：返回x的绝对值。
+			.round(x)：返回x四舍五入后的值。
+			.sqrt(x):返回x的平方根。
+			.ceil(x)：返回大于等于x的最小整数。
+			.floor(x)：返回小于等于x的最大整数。
+			.sin(x)：返回x的正弦。
+			.cos(x)：返回x的余弦。
+			.tan(x)：返回x的正切。
+			.acos(x)：返回x的反余弦。
+			.asin(x)：返回x的反正弦。
+			.atan(x)：返回x的反正切。
+			.exp(x)：返回e的x次幂。
+			.pow(n,m)：返回n的m次幂。
+			.log(x)：返回x的自然对数（lnx）。
+			.max(a,b)：返回a,b中较大的数。
+			.min(a,b)：返回a,b中较小的数。
+			.random()：返回大于0小于1的一个随机数。
+
+		4.Array数组对象：
+		数组对象是对象的集合，里面的对象可以是不同类型的。数组的每一个成员对象都有一个下标，标记在数组中的位置。
+		JavaScript只有一维数组，如果要使用多维数组，需要用虚拟法：var myArray = new Array(new Array(),new Array(),new Array(),……)；
+		Array的属性：length：返回在数组的长度，即数组里有多少个元素。
+		Array的方法：
+			.join("指定分隔符")：返回一个字符串，把数组元素串起来，元素之间用指定分隔符隔开。
+			.toString()：把数组转为字符串，并返回结果。
+			.reverse()：使数组元素倒序。
+			.slice(n,m)：返回子数组，从数组第n个元素到第m个元素。
+			.sort(SortFunction)：按照指定的SortFunction将数组的元素排序。
+			.concat(Array\_1,Array\_2)：用于连接两个或多个数组。.
+
+		
+		
+	
