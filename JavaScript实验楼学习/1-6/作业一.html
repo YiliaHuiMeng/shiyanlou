@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            .class1{
+                height: 100px;
+                width: 100px;
+                background: red;
+            }
+            
+            .class2{
+                height: 100px;
+                width: 100px;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="my_div"></div>
+        <input type="text"/>
+        <input type="text"/>
+        <div id="div_1" class="class1"></div>
+        <br/>
+        <a>before:</a>
+        <script type="text/javascript">
+            document.getElementById("my_div").style.height="100px";
+            document.getElementById("my_div").style.background="red";
+            document.getElementsByTagName("input")[0].value="hello";
+            document.getElementsByTagName("input")[1].value="shiyanlou";
+            document.write(document.getElementById("div_1").getAttribute("class"));
+            
+        </script>
+        <br/>
+        <a>after:</a>
+        <script>
+            document.getElementById("div_1").setAttribute("class","class2");
+     document.write(document.getElementById("div_1").getAttribute("class"));       
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+JavaScript中DOM笔记：
+	DOM是文档对象建模（Document Object Model）的简称。
+	思想：把结构化的文档解析成一系列的节点，再由这些节点组成一个树状结构（DOM Tree）。所有的节点和最终的树状结构，都有规范的对外借口，以达到使用编程语言操作文档的目的，所有DOM可以理解成文档的编程接口。
+	严格的说DOM不属于JavaScript，但是操作DOM是JavaScript最常见的任务，而JavaScript是最常用于DOM操作的语言。	
+	1.节点：
+		DOM最小的组成单位，一个文档的树形结构就是由各种不同类型的节点组成的。
+	节点对于HTML文档，主要有以下六种：
+	a.Document		文档节点	window.doument,整个文档
+	b.DocumentType		文档类型节点	文档的类型
+	c.Element		元素节点	HTML元素（<head>、<body>等）
+	d.Attribute		属性节点	HTML元素的属性（如class="right"）
+	e.Text			文本节点	HTML文档中出现的文本
+	f.DocumentFragment	文档碎片节点	文档的片段
+	
+	2.通过ID选取元素
+	可以使用方法getElementById()通过元素的ID而选取元素，并对其作操作。如：
+ 	<script type="text/javascript">
+            document.getElementById("my_div").style.height="100px";
+            document.getElementById("my_div").style.background="red";
+            
+        </script>
+
+	3.通过名字或标签名选取元素
+	可以使用方法getElementByName()方法或getElementByTagName()方法通过元素的ID而选取元素，如果有多个同类型的标签，我们需要以下标确认，如：
+        <input type="text"/>
+        <input type="text"/>
+         document.getElementsByTagName("input")[0].value="hello";
+         document.getElementsByTagName("input")[1].value="shiyanlou";
+
+	节点、属性操作和文档遍历
+	1.查询和设置元素的属性：可以通过getAttribute()和setAttribute()查询和设置元素的属性，如：
