@@ -35,5 +35,43 @@
             document.getElementById("div_1").setAttribute("class","class2");
      document.write(document.getElementById("div_1").getAttribute("class"));       
         </script>
+        
+        <div class="demo-parent">
+            <div id="demo"></div>
+        </div>
+        <script type="text/javascript">
+            document.write(document.getElementById("demo").parentNode.getAttribute("class"));
+        </script>
+        
+        <div style="background:#00f;height:100px"></div>
+        <script type="text/javascript">
+            var mydiv = document.createEvent("div");
+            mydiv.style.height="100px";
+            mydiv.style.background="red";
+            document.getElementsByTagName("body")[0].appendChild(mydiv);
+        </script>
+        
+        <div id="div_red" style="background:#F00;height:100px"></div>
+        <div id="div_blue" style="background:#00F;height:100px"></div>
+        <script type="text/javascript">
+            function remove_red(){
+                var obj = document.getElementById("div_red");
+                obj.parentNode.removeChild(obj);
+            }
+        </script>
+        <button onclick = "remove_red()">remove red div
+        </button>
+        
+        <div id="div_color" style="background:red;height:100px"></div>
+        <script>
+            function div_change(){
+                 var obj1 = document.getElementById("div_color");
+                obj1.style.background="blue";
+            }
+           
+            
+        </script>
+        <button onclick="div_change()">change the color</button>
+    
     </body>
 </html>
